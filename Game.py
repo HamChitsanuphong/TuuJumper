@@ -1,14 +1,6 @@
 import pgzrun
 import random
 
-''' LEVEL                             แก้ภาพเลื่อน กูเปลี่ยนจาก Meter เป็น ระยะทางแทน เปลี่ยนตัวแปลด้วยก็ได้จะได้ไม่งง จาก Meter เป็น meter
-
-    Easy : อนุสวรี อย่างเดียว
-    Medium : เครื่องบินเข้ามา
-    Hard : ผู้คนเข้ามา ขยับ ขึ้นมาเหยียบบนหญ้าดา
-
-'''
-
 def draw():
     global status_game, Object, Meter, Max_Meter, health, blood, text_space
     screen.clear()
@@ -265,7 +257,7 @@ idle = ["tank_stay_0","tank_stay_1","tank_stay_2"]
 Immortal = ["immortal/tank_stay_0","immortal/tank_stay_1","immortal/tank_stay_2"]
 Immortal_jump = ["immortal/tank_jump_0","immortal/tank_jump_1","immortal/tank_jump_2"]
 jump_up = ["tank_jump_0","tank_jump_1","tank_jump_2"]
-# jump_down = ["tank_stay_0","tank_stay_1","tank_stay_2"] # ------------------ แก้ ไม่เอาลงแล้ว เอาแต่ up ถ้าแก้ตรงหน้า HOME ได้ก็ดีเหมือนกัน กระโดดแล้วเปลี่ยนภาพหนะ
+
 block = ["block_1", "block_2"] # -------------------------------- แก้หน่อย เอาออก เหลือ 2 อัน
 player = Actor("tank_stay_0", (150,500))
 blood = [Actor("blood", (600, 40)),Actor("blood", (650, 40)),Actor("blood", (700, 40))]
@@ -275,7 +267,7 @@ speed = 0
 # Over
 animation_text_again = ["text_again/again_0","text_again/again_1","text_again/again_2","text_again/again_3","text_again/again_4","text_again/again_5","text_again/again_6","text_again/again_7"]
 
-clock.schedule_interval(Meter_check, 0.030)  # ถ้าฉากเร็วขึ้น ให้ลดลงมาตามฉาก เช่น 0.025 มี 5 step ฉากอะ ก็ลดไปเรื่อยๆ 0.020, 0.015, 0.010 นับเมตรไง
+clock.schedule_interval(Meter_check, 0.030) 
 clock.schedule_interval(animation, 0.150)
 clock.schedule_interval(spawn, 1.5)
 clock.schedule_interval(animation_text, 0.070)
