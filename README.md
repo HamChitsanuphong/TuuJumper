@@ -2,8 +2,8 @@
 โปรเจคเกม วิชา PYTHON
 
 # MENU
-![MENU](https://www.picz.in.th/image/blg4M8)
+![MENU](https://sv1.picz.in.th/images/2020/11/08/blgB1R.png)
 # PLAY
-(https://www.picz.in.th/image/blgB1R)
+![PLAY](https://sv1.picz.in.th/images/2020/11/08/blg4M8.png)
 # OVER
-(https://www.picz.in.th/image/blgfA0)
+![OVER](https://sv1.picz.in.th/images/2020/11/08/blgfA0.png)
